@@ -1,0 +1,10 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX artechh: <http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#>
+            SELECT ?product ?productType ?review
+            WHERE {
+                ?product rdf:type artechh:Product.
+                OPTIONAL {
+                    ?product artechh:hasReviews ?review.
+                }
+                ?product artechh:HasProductType ?productType.
+            }

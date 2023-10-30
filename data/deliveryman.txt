@@ -1,0 +1,7 @@
+  PREFIX artechh: <http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#>
+      SELECT ?deliveryMan ?tel ?address
+      WHERE {
+        ?deliveryMan a artechh:DeliveryMan ;
+                     artechh:Tel ?tel ;
+                     artechh:address ?address .
+      }

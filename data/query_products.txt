@@ -1,0 +1,9 @@
+PREFIX ns: <http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#>
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+            PREFIX artechh: <http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#>
+            SELECT ?productType
+            WHERE {
+                ?productType rdf:type artechh:ProductType .
+            }

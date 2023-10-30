@@ -1,0 +1,7 @@
+PREFIX artechh: <http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#>
+      SELECT ?galleryOwner ?email ?address
+      WHERE {
+        ?galleryOwner a artechh:GalleryOwner ;
+                      artechh:email ?email ;
+                      artechh:address ?address .
+      }

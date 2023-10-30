@@ -1,0 +1,10 @@
+PREFIX artechh: <http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+    SELECT ?cart ?product
+    WHERE {
+      ?cart rdf:type artechh:Cart.
+      ?cart artechh:HasProduct ?product.
+      ?cart artechh:IntoCart ?product.
+    }
